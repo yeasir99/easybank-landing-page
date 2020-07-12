@@ -1,0 +1,198 @@
+:root {
+    --dark-blue: hsl(233, 26%, 24%);
+    --lime-green: hsl(136, 65%, 51%);
+    --bright-cyen: hsl(192, 70%, 51%);
+    --grayish-blue: hsl(233, 8%, 62%);
+    --light-grayish-blue: hsl(220, 16%, 96%);
+    --light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Public Sans', sans-serif;
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+
+p {
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--grayish-blue);
+}
+
+.gridItem {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white);
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    background: linear-gradient(90deg, var(--lime-green), var(--bright-cyen));
+    font-size: 1.8rem;
+    border-radius: 5rem;
+}
+
+/* Header Section Start */
+
+header {
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.line {
+    height: .5rem;
+    width: 4rem;
+    background-color: var(--dark-blue);
+}
+
+.line-2 {
+    margin: .5rem 0;
+}
+
+.mainnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navitems {
+    list-style: none;
+}
+
+.navlinks {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+/* Header Section End */
+
+/* Banner Section Start */
+
+.Banner {
+    height: 80vh;
+    background-color: var(--light-gray);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+/* Banner Section End */
+
+/* Banking Section start */
+
+.banking {
+    padding: 10rem 0;
+    background-color: var(--light-grayish-blue);
+}
+
+.banking-title p {
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+}
+
+.box img {
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+.box h3 {
+    margin: 2rem 0 3rem;
+}
+
+/* Banking Section End */
+
+/* article Section Start */
+article {
+    background-color: var(--light-gray);
+    padding: 3rem 0 6rem;
+}
+
+article h2 {
+    padding: 5rem 0;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 225px;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-content p {
+    font-size: 1.6rem;
+}
+
+.card-content p span {
+    font-size: 1.2rem;
+}
+
+.card-content a {
+    display: inline-block;
+    text-decoration: none;
+    padding: .8rem 0;
+    color: #000;
+}
+
+/* article Section End */
+
+/* footer section Start */
+
+footer {
+    background-color: var(--dark-blue);
+}
+
+/* footer section end */
